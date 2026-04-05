@@ -1,0 +1,122 @@
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T13:24:46.798Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T13:24:46.800Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T13:33:02.702Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T13:33:02.703Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T17:18:26.159Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T17:18:26.164Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T17:18:47.693Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T17:18:47.694Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T17:28:33.135Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T17:28:33.144Z"}
+{"level":"info","message":"New user registered: yuvraj@gmail.com","timestamp":"2026-04-04T17:28:45.854Z"}
+{"level":"info","message":"User logged in: yuvraj@gmail.com","timestamp":"2026-04-04T17:33:32.106Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T17:35:27.867Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T17:35:27.881Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:00:23.392Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:00:23.404Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:01:04.123Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:01:04.133Z"}
+{"level":"info","message":"New expense added by user: 69d14a4d3edd0597c7109357, amount: 500, category: Food","timestamp":"2026-04-04T19:01:28.774Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:04:56.231Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:04:56.243Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:05:24.858Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:05:24.869Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:05:35.942Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:05:35.951Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:06:12.754Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:06:12.764Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:06:23.969Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:06:23.977Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:06:29.191Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:06:29.199Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:06:34.319Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:06:34.326Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:06:47.276Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:06:47.285Z"}
+{"level":"info","message":"Budget set for user: 69d14a4d3edd0597c7109357, category: Food, limit: 3000","timestamp":"2026-04-04T19:09:30.590Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:21:11.566Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:21:11.582Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:21:55.656Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:21:55.667Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:22:25.641Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:22:25.651Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:22:43.159Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:22:43.171Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:22:52.657Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:22:52.668Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:23:11.091Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:23:11.100Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:23:47.208Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:23:47.222Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:24:09.266Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:24:09.276Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:24:22.427Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:24:22.437Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:24:27.268Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:24:27.276Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:24:31.032Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:24:31.040Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:24:40.687Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:24:40.699Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:25:08.657Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:25:08.667Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:26:24.949Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:26:24.958Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:26:54.366Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:26:54.377Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:27:07.352Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:27:07.361Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:27:17.329Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:27:17.338Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:27:37.592Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:27:37.601Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:28:29.072Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:28:29.082Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:28:55.397Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:28:55.409Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:29:09.354Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:29:09.369Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:29:17.842Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:29:17.853Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:29:45.748Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:29:45.758Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:30:16.910Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:30:16.919Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:30:50.142Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:30:50.152Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:31:05.082Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:31:05.094Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-04T19:31:13.758Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-04T19:31:13.770Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-05T07:36:19.918Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-05T07:36:19.928Z"}
+{"level":"info","message":"New user registered: parande@gmail.com","timestamp":"2026-04-05T08:54:27.193Z"}
+{"level":"info","message":"Category breakdown fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:54:39.435Z"}
+{"level":"info","message":"Monthly trend fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:54:39.436Z"}
+{"level":"info","message":"Income vs expense fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:54:39.437Z"}
+{"level":"info","message":"Category breakdown fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:54:39.442Z"}
+{"level":"info","message":"Monthly trend fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:54:39.443Z"}
+{"level":"info","message":"Income vs expense fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:54:39.444Z"}
+{"level":"info","message":"Budget set for user: 69d22343e356aa673a0d3697, category: Entertainment, limit: 30000","timestamp":"2026-04-05T08:55:08.877Z"}
+{"level":"info","message":"Category breakdown fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:12.332Z"}
+{"level":"info","message":"Monthly trend fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:12.333Z"}
+{"level":"info","message":"Income vs expense fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:12.334Z"}
+{"level":"info","message":"Category breakdown fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:12.336Z"}
+{"level":"info","message":"Monthly trend fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:12.336Z"}
+{"level":"info","message":"Income vs expense fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:12.337Z"}
+{"level":"info","message":"New expense added by user: 69d22343e356aa673a0d3697, amount: 400, category: Food","timestamp":"2026-04-05T08:55:33.975Z"}
+{"level":"info","message":"Category breakdown fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:38.400Z"}
+{"level":"info","message":"Monthly trend fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:38.401Z"}
+{"level":"info","message":"Income vs expense fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:38.402Z"}
+{"level":"info","message":"Category breakdown fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:38.406Z"}
+{"level":"info","message":"Monthly trend fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:38.406Z"}
+{"level":"info","message":"Income vs expense fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T08:55:38.407Z"}
+{"level":"info","message":"Group created by user: 69d22343e356aa673a0d3697, groupName: F4 Bois","timestamp":"2026-04-05T08:56:21.341Z"}
+{"level":"info","message":"New user registered: yuvrajdeshmukh8998@gmail.com","timestamp":"2026-04-05T08:57:20.869Z"}
+{"level":"info","message":"Group created by user: 69d223f0e356aa673a0d369b, groupName: F4 Bois","timestamp":"2026-04-05T08:57:38.841Z"}
+{"level":"info","message":"Member added to group: F4 Bois, member: parande@gmail.com","timestamp":"2026-04-05T08:57:56.503Z"}
+{"level":"info","message":"Group expense added: Cafe, amount: 455, group: F4 Bois","timestamp":"2026-04-05T08:58:14.112Z"}
+{"level":"info","message":"User logged in: parande@gmail.com","timestamp":"2026-04-05T08:59:02.258Z"}
+{"level":"info","message":"Notification marked as read: 69d22426e356aa673a0d369f","timestamp":"2026-04-05T08:59:22.129Z"}
+{"level":"info","message":"Notification marked as read: 69d22414e356aa673a0d369d","timestamp":"2026-04-05T08:59:23.390Z"}
+{"level":"info","message":"Group expense added: ntt, amount: 455, group: F4 Bois","timestamp":"2026-04-05T09:01:17.675Z"}
