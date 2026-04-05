@@ -120,3 +120,31 @@
 {"level":"info","message":"Notification marked as read: 69d22426e356aa673a0d369f","timestamp":"2026-04-05T08:59:22.129Z"}
 {"level":"info","message":"Notification marked as read: 69d22414e356aa673a0d369d","timestamp":"2026-04-05T08:59:23.390Z"}
 {"level":"info","message":"Group expense added: ntt, amount: 455, group: F4 Bois","timestamp":"2026-04-05T09:01:17.675Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-05T09:35:28.403Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-05T09:35:28.422Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-05T09:35:53.115Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-05T09:35:53.128Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-04-05T09:36:12.624Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-04-05T09:36:12.635Z"}
+{"level":"info","message":"User logged in: parande@gmail.com","timestamp":"2026-04-05T09:37:31.678Z"}
+{"level":"info","message":"Category breakdown fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:28.213Z"}
+{"level":"info","message":"Monthly trend fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:28.216Z"}
+{"level":"info","message":"Income vs expense fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:28.217Z"}
+{"level":"info","message":"Category breakdown fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:28.218Z"}
+{"level":"info","message":"Monthly trend fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:28.223Z"}
+{"level":"info","message":"Income vs expense fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:28.224Z"}
+{"level":"info","message":"Category breakdown fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:47.838Z"}
+{"level":"info","message":"Monthly trend fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:47.840Z"}
+{"level":"info","message":"Income vs expense fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:47.841Z"}
+{"level":"info","message":"Category breakdown fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:47.845Z"}
+{"level":"info","message":"Monthly trend fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:47.846Z"}
+{"level":"info","message":"Income vs expense fetched for user: 69d22343e356aa673a0d3697","timestamp":"2026-04-05T09:38:47.846Z"}
+{"level":"info","message":"New user registered: sai@gmail.com","timestamp":"2026-04-05T09:40:40.414Z"}
+{"level":"info","message":"New expense added by user: 69d22e1859fd12243fa7bd50, amount: 30000, category: Food","timestamp":"2026-04-05T09:41:42.965Z"}
+{"level":"warn","message":"Large transaction detected for user: 69d22e1859fd12243fa7bd50, amount: 30000","timestamp":"2026-04-05T09:41:42.971Z"}
+{"level":"info","message":"Budget set for user: 69d22e1859fd12243fa7bd50, category: Food, limit: 40000","timestamp":"2026-04-05T09:42:19.550Z"}
+{"level":"info","message":"New user registered: rahul@gmail.com","timestamp":"2026-04-05T09:44:10.756Z"}
+{"level":"info","message":"Group created by user: 69d22e1859fd12243fa7bd50, groupName: Goa","timestamp":"2026-04-05T09:44:40.720Z"}
+{"level":"info","message":"Member added to group: Goa, member: rahul@gmail.com","timestamp":"2026-04-05T09:45:14.201Z"}
+{"level":"info","message":"Group expense added: Dinner, amount: 12000, splitType: unequal","timestamp":"2026-04-05T09:46:09.088Z"}
+{"level":"info","message":"Split marked as paid for expense: 69d22f6159fd12243fa7bd57, member: 69d22eea59fd12243fa7bd54","timestamp":"2026-04-05T09:47:09.777Z"}

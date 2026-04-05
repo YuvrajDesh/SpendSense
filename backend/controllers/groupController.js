@@ -8,17 +8,14 @@ const logger = require('../utils/logger');
 const createGroup = async (req, res) => {
     try {
         const { name, description } = req.body;
-
         const group = await Group.create({
             name,
             description,
             createdBy: req.user.id,
             members: [req.user.id]
         });
-
         logger.info(`Group created by user: ${req.user.id}, groupName: ${name}`);
         res.status(201).json(group);
-
     } catch (err) {
         logger.error(`Create group error: ${err.message}`);
         res.status(500).json({ message: 'Server error' });
@@ -31,9 +28,7 @@ const getGroups = async (req, res) => {
         const groups = await Group.find({ members: req.user.id })
             .populate('members', 'name email')
             .populate('createdBy', 'name email');
-
         res.status(200).json(groups);
-
     } catch (err) {
         logger.error(`Get groups error: ${err.message}`);
         res.status(500).json({ message: 'Server error' });
@@ -44,24 +39,16 @@ const getGroups = async (req, res) => {
 const addMember = async (req, res) => {
     try {
         const { email } = req.body;
-
         const group = await Group.findById(req.params.id);
-        if (!group) {
-            return res.status(404).json({ message: 'Group not found' });
-        }
+        if (!group) return res.status(404).json({ message: 'Group not found' });
 
-        // Check if requester is group creator
         if (group.createdBy.toString() !== req.user.id) {
             return res.status(403).json({ message: 'Only group creator can add members' });
         }
 
-        // Find user by email
         const user = await User.findOne({ email });
-        if (!user) {
-            return res.status(404).json({ message: 'User not found' });
-        }
+        if (!user) return res.status(404).json({ message: 'User not found' });
 
-        // Check if already a member
         if (group.members.includes(user._id)) {
             return res.status(400).json({ message: 'User is already a member' });
         }
@@ -69,7 +56,6 @@ const addMember = async (req, res) => {
         group.members.push(user._id);
         await group.save();
 
-        // Notify the added user
         await Notification.create({
             user: user._id,
             message: `You have been added to group: ${group.name}`,
@@ -78,26 +64,58 @@ const addMember = async (req, res) => {
 
         logger.info(`Member added to group: ${group.name}, member: ${email}`);
         res.status(200).json({ message: 'Member added successfully', group });
-
     } catch (err) {
         logger.error(`Add member error: ${err.message}`);
         res.status(500).json({ message: 'Server error' });
     }
 };
 
-// Add group expense
+// Add group expense with split options
 const addGroupExpense = async (req, res) => {
     try {
-        const { description, amount, splitAmong } = req.body;
+        const { description, amount, splitType, splitDetails } = req.body;
 
-        const group = await Group.findById(req.params.id);
-        if (!group) {
-            return res.status(404).json({ message: 'Group not found' });
+        const group = await Group.findById(req.params.id).populate('members', 'name email');
+        if (!group) return res.status(404).json({ message: 'Group not found' });
+
+        if (!group.members.find(m => m._id.toString() === req.user.id)) {
+            return res.status(403).json({ message: 'You are not a member of this group' });
         }
 
-        // Check if requester is a member
-        if (!group.members.includes(req.user.id)) {
-            return res.status(403).json({ message: 'You are not a member of this group' });
+        let computedSplitDetails = [];
+
+        if (splitType === 'equal') {
+            const splitAmount = parseFloat((amount / splitDetails.length).toFixed(2));
+            computedSplitDetails = splitDetails.map(memberId => ({
+                user: memberId,
+                amount: splitAmount,
+                percentage: parseFloat((100 / splitDetails.length).toFixed(2)),
+                isPaid: memberId.toString() === req.user.id
+            }));
+
+        } else if (splitType === 'unequal') {
+            const total = splitDetails.reduce((sum, s) => sum + parseFloat(s.amount), 0);
+            if (Math.round(total) !== Math.round(amount)) {
+                return res.status(400).json({ message: `Split amounts must add up to ₹${amount}` });
+            }
+            computedSplitDetails = splitDetails.map(s => ({
+                user: s.userId,
+                amount: parseFloat(s.amount),
+                percentage: parseFloat(((s.amount / amount) * 100).toFixed(2)),
+                isPaid: s.userId.toString() === req.user.id
+            }));
+
+        } else if (splitType === 'percentage') {
+            const totalPercentage = splitDetails.reduce((sum, s) => sum + parseFloat(s.percentage), 0);
+            if (Math.round(totalPercentage) !== 100) {
+                return res.status(400).json({ message: 'Percentages must add up to 100%' });
+            }
+            computedSplitDetails = splitDetails.map(s => ({
+                user: s.userId,
+                amount: parseFloat(((s.percentage / 100) * amount).toFixed(2)),
+                percentage: parseFloat(s.percentage),
+                isPaid: s.userId.toString() === req.user.id
+            }));
         }
 
         const groupExpense = await GroupExpense.create({
@@ -105,26 +123,55 @@ const addGroupExpense = async (req, res) => {
             paidBy: req.user.id,
             description,
             amount,
-            splitAmong
+            splitType,
+            splitDetails: computedSplitDetails
         });
 
-        // Notify all split members
-        const splitAmount = (amount / splitAmong.length).toFixed(2);
-        await Promise.all(splitAmong.map(async (memberId) => {
-            if (memberId !== req.user.id) {
+        // Notify all members except paidBy
+        await Promise.all(computedSplitDetails.map(async (split) => {
+            if (split.user.toString() !== req.user.id) {
                 await Notification.create({
-                    user: memberId,
-                    message: `You owe ₹${splitAmount} for "${description}" in group ${group.name}`,
+                    user: split.user,
+                    message: `You owe ₹${split.amount} for "${description}" in group "${group.name}"`,
                     type: 'group_activity'
                 });
             }
         }));
 
-        logger.info(`Group expense added: ${description}, amount: ${amount}, group: ${group.name}`);
+        logger.info(`Group expense added: ${description}, amount: ${amount}, splitType: ${splitType}`);
         res.status(201).json(groupExpense);
-
     } catch (err) {
         logger.error(`Add group expense error: ${err.message}`);
+        res.status(500).json({ message: 'Server error' });
+    }
+};
+
+// Mark split as paid
+const markSplitAsPaid = async (req, res) => {
+    try {
+        const { expenseId, memberId } = req.params;
+
+        const expense = await GroupExpense.findById(expenseId).populate('group');
+        if (!expense) return res.status(404).json({ message: 'Expense not found' });
+
+        const split = expense.splitDetails.find(s => s.user.toString() === memberId);
+        if (!split) return res.status(404).json({ message: 'Split not found' });
+
+        split.isPaid = true;
+        split.paidAt = new Date();
+        await expense.save();
+
+        // Notify the person who paid for the group expense
+        await Notification.create({
+            user: expense.paidBy,
+            message: `A member has paid their share of ₹${split.amount} for "${expense.description}" in group "${expense.group.name}"`,
+            type: 'group_activity'
+        });
+
+        logger.info(`Split marked as paid for expense: ${expenseId}, member: ${memberId}`);
+        res.status(200).json({ message: 'Split marked as paid' });
+    } catch (err) {
+        logger.error(`Mark split as paid error: ${err.message}`);
         res.status(500).json({ message: 'Server error' });
     }
 };
@@ -134,15 +181,13 @@ const getGroupExpenses = async (req, res) => {
     try {
         const expenses = await GroupExpense.find({ group: req.params.id })
             .populate('paidBy', 'name email')
-            .populate('splitAmong', 'name email')
+            .populate('splitDetails.user', 'name email')
             .sort({ date: -1 });
-
         res.status(200).json(expenses);
-
     } catch (err) {
         logger.error(`Get group expenses error: ${err.message}`);
         res.status(500).json({ message: 'Server error' });
     }
 };
 
-module.exports = { createGroup, getGroups, addMember, addGroupExpense, getGroupExpenses };
+module.exports = { createGroup, getGroups, addMember, addGroupExpense, getGroupExpenses, markSplitAsPaid };
