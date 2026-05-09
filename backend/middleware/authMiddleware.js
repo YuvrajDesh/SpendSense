@@ -17,6 +17,7 @@ const protect = (req, res, next) => {
     } catch (err) {
         logger.error(`Auth middleware error: ${err.message}`);
         res.status(401).json({ message: 'Invalid token' });
+        //
     }
 };
 
