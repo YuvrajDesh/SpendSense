@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+        PATH = "/usr/local/bin:/opt/homebrew/bin:/bin:/usr/bin:/usr/sbin:/sbin:${env.PATH}"
         DOCKER_HUB_REPO = 'yuvraj12345678/spendsense'
         BACKEND_IMAGE = "${DOCKER_HUB_REPO}-backend"
         FRONTEND_IMAGE = "${DOCKER_HUB_REPO}-frontend"
