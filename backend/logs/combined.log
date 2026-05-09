@@ -195,3 +195,46 @@
 {"level":"info","message":"Server running on port 5000","timestamp":"2026-05-09T04:46:43.512Z"}
 {"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-09T04:46:43.538Z"}
 {"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-09T04:46:43.538Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-05-09T19:18:37.240Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-09T19:18:37.376Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-05-09T19:43:37.406Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-09T19:43:37.583Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-05-09T19:46:07.707Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-09T19:46:07.790Z"}
+{"level":"info","message":"User logged in: parande@gmail.com","timestamp":"2026-05-09T19:48:06.832Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-05-09T22:06:33.779Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-09T22:06:33.856Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-05-09T22:07:43.984Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-09T22:07:44.097Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-05-09T22:24:37.514Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-09T22:24:37.682Z"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:19.188Z","url":"/"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:19.250Z","url":"/login"}
+{"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:19.263Z","url":"/api/unknown-endpoint"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:19.784Z","url":"/"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:19.801Z","url":"/login"}
+{"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:19.816Z","url":"/api/unknown-endpoint"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:20.354Z","url":"/"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:20.390Z","url":"/login"}
+{"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:20.413Z","url":"/api/unknown-endpoint"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:20.953Z","url":"/"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:20.975Z","url":"/login"}
+{"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:20.994Z","url":"/api/unknown-endpoint"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:21.525Z","url":"/"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:21.548Z","url":"/login"}
+{"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:21.563Z","url":"/api/unknown-endpoint"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:22.097Z","url":"/"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:22.120Z","url":"/login"}
+{"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:22.135Z","url":"/api/unknown-endpoint"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:22.663Z","url":"/"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:22.682Z","url":"/login"}
+{"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:22.696Z","url":"/api/unknown-endpoint"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:23.227Z","url":"/"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:23.249Z","url":"/login"}
+{"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:23.262Z","url":"/api/unknown-endpoint"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:23.788Z","url":"/"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:23.819Z","url":"/login"}
+{"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:23.841Z","url":"/api/unknown-endpoint"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:24.365Z","url":"/"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:24.386Z","url":"/login"}
+{"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:24.404Z","url":"/api/unknown-endpoint"}

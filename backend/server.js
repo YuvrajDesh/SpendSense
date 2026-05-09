@@ -20,6 +20,23 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Request logging middleware
+app.use((req, res, next) => {
+    res.on('finish', () => {
+        const logData = {
+            method: req.method,
+            url: req.url,
+            status: res.statusCode,
+        };
+        if (res.statusCode >= 400) {
+            logger.error(`HTTP ${req.method} ${req.url} - ${res.statusCode}`, logData);
+        } else {
+            logger.info(`HTTP ${req.method} ${req.url} - ${res.statusCode}`, logData);
+        }
+    });
+    next();
+});
+
 // Database connection
 connectDB();
 
