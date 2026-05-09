@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: spendsense-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: spendsense
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - spendsense
+
+  backend:
+    build: ./backend
+    container_name: spendsense-backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/spendsense
+      - JWT_SECRET=your_jwt_secret_here
+      - NODE_ENV=production
+    depends_on:
+      - mongodb
+    networks:
+      - spendsense
+
+  frontend:
+    build: ./frontend
+    container_name: spendsense-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - spendsense
+
+volumes:
+  mongo_data:
+
+networks:
+  spendsense:
+    driver: bridge

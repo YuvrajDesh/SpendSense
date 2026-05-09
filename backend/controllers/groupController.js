@@ -189,5 +189,55 @@ const getGroupExpenses = async (req, res) => {
         res.status(500).json({ message: 'Server error' });
     }
 };
+// Settle up between two members
+const settleUp = async (req, res) => {
+    try {
+        const { id } = req.params; // group id
+        const { memberId } = req.body; // person who is settling
 
-module.exports = { createGroup, getGroups, addMember, addGroupExpense, getGroupExpenses, markSplitAsPaid };
+        // Find all unpaid splits where current user owes memberId
+        const expenses = await GroupExpense.find({ group: id })
+            .populate('paidBy', 'name email')
+            .populate('splitDetails.user', 'name email');
+
+        let totalSettled = 0;
+        let settledCount = 0;
+
+        for (const expense of expenses) {
+            if (expense.paidBy._id.toString() === memberId) {
+                for (const split of expense.splitDetails) {
+                    if (split.user._id.toString() === req.user.id && !split.isPaid) {
+                        split.isPaid = true;
+                        split.paidAt = new Date();
+                        totalSettled += split.amount;
+                        settledCount++;
+                    }
+                }
+                await expense.save();
+            }
+        }
+
+        if (settledCount === 0) {
+            return res.status(400).json({ message: 'No pending splits found' });
+        }
+
+        // Get group name
+        const group = await Group.findById(id);
+
+        // Notify the person being settled with
+        await Notification.create({
+            user: memberId,
+            message: `${req.user.name || 'A member'} has settled up ₹${totalSettled.toFixed(2)} with you in group "${group.name}"`,
+            type: 'group_activity'
+        });
+
+        logger.info(`Settle up: user ${req.user.id} settled ₹${totalSettled} with ${memberId} in group ${id}`);
+        res.status(200).json({ message: `Settled up ₹${totalSettled.toFixed(2)} successfully` });
+
+    } catch (err) {
+        logger.error(`Settle up error: ${err.message}`);
+        res.status(500).json({ message: 'Server error' });
+    }
+};
+
+module.exports = { createGroup, getGroups, addMember, addGroupExpense, getGroupExpenses, markSplitAsPaid, settleUp };

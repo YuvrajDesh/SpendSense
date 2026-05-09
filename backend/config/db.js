@@ -3,7 +3,11 @@ const logger = require('../utils/logger');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(process.env.MONGO_URI);
+        const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/spendsense';
+        if (!process.env.MONGO_URI) {
+            logger.warn('MONGO_URI is not set. Falling back to mongodb://127.0.0.1:27017/spendsense');
+        }
+        await mongoose.connect(mongoURI);
         logger.info('MongoDB connected successfully');
     } catch (err) {
         logger.error('MongoDB connection failed', err);
