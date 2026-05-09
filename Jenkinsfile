@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/yuvrajdeshmukh/Spendsense.git'
+                git branch: 'main', url: 'https://github.com/YuvrajDesh/SpendSense.git'
             }
         }
 
