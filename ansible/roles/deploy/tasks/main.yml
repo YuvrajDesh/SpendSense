@@ -1,5 +1,31 @@
 ---
-- name: Deploy to Kubernetes
-  k8s:
-    state: present
-    definition: "{{ lookup('file', 'k8s/deployment.yml') }}"
+# ─── Deploy Role — Apply all K8s manifests ───────────────────────────────────
+
+- name: Apply all Kubernetes manifests from k8s/ directory
+  command: kubectl apply -f {{ project_root }}/k8s/
+  register: kubectl_apply
+  changed_when: "'configured' in kubectl_apply.stdout or 'created' in kubectl_apply.stdout"
+
+- name: Show kubectl apply output
+  debug:
+    msg: "{{ kubectl_apply.stdout_lines }}"
+
+- name: Wait for backend deployment to be ready
+  command: >
+    kubectl rollout status deployment/spendsense-backend
+    --timeout=120s
+  register: backend_rollout
+  changed_when: false
+  failed_when: backend_rollout.rc != 0
+
+- name: Wait for frontend deployment to be ready
+  command: >
+    kubectl rollout status deployment/spendsense-frontend
+    --timeout=120s
+  register: frontend_rollout
+  changed_when: false
+  failed_when: frontend_rollout.rc != 0
+
+- name: Confirm deployment status
+  debug:
+    msg: "✅ SpendSense deployed successfully to Kubernetes."

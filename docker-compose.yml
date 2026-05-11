@@ -23,6 +23,8 @@ services:
     environment:
       - MONGO_URI=mongodb://mongodb:27017/spendsense
       - JWT_SECRET=spendsense_secret_2026
+      - LOGSTASH_HOST=logstash
+      - LOGSTASH_PORT=5044
       - NODE_ENV=production
     depends_on:
       - mongodb

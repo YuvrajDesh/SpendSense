@@ -11,12 +11,16 @@ const logger = winston.createLogger({
         new winston.transports.Console(),
         new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),
         new winston.transports.File({ filename: 'logs/combined.log' }),
-        new LogstashTransport({
-            mode: 'tcp',
-            host: 'localhost',
-            port: 5044
-        })
     ]
 });
+
+// Only add Logstash transport if host is configured
+if (process.env.LOGSTASH_HOST) {
+    logger.add(new LogstashTransport({
+        mode: 'tcp',
+        host: process.env.LOGSTASH_HOST,
+        port: process.env.LOGSTASH_PORT || 5044
+    }));
+}
 
 module.exports = logger;

@@ -238,3 +238,60 @@
 {"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-09T22:25:24.365Z","url":"/"}
 {"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-09T22:25:24.386Z","url":"/login"}
 {"level":"error","message":"HTTP GET /api/unknown-endpoint - 404","method":"GET","status":404,"timestamp":"2026-05-09T22:25:24.404Z","url":"/api/unknown-endpoint"}
+{"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:04:47.132Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:04:47.134Z","url":"/register"}
+{"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:04:47.213Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:04:47.214Z","url":"/register"}
+{"level":"error","message":"HTTP POST /register - 400","method":"POST","status":400,"timestamp":"2026-05-11T13:04:47.216Z","url":"/register"}
+{"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:04:47.292Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:04:47.293Z","url":"/register"}
+{"level":"info","message":"User logged in: yuvraj@test.com","timestamp":"2026-05-11T13:04:47.361Z"}
+{"level":"info","message":"HTTP POST /login - 200","method":"POST","status":200,"timestamp":"2026-05-11T13:04:47.362Z","url":"/login"}
+{"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:04:47.434Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:04:47.434Z","url":"/register"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-11T13:04:47.503Z","url":"/login"}
+{"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:04:47.576Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:04:47.576Z","url":"/register"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-11T13:04:47.578Z","url":"/login"}
+{"level":"info","message":"New user registered: tester@example.com","timestamp":"2026-05-11T13:06:54.023Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.026Z","url":"/register"}
+{"level":"info","message":"Budget set for user: 6a01d46e525f0b3755face41, category: Food, limit: 5000","timestamp":"2026-05-11T13:06:54.032Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.033Z","url":"/"}
+{"level":"info","message":"New user registered: tester@example.com","timestamp":"2026-05-11T13:06:54.104Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.104Z","url":"/register"}
+{"level":"info","message":"Budget set for user: 6a01d46e525f0b3755face43, category: Food, limit: 5000","timestamp":"2026-05-11T13:06:54.107Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.107Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-11T13:06:54.115Z","url":"/"}
+{"level":"info","message":"New user registered: tester@example.com","timestamp":"2026-05-11T13:06:54.187Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.188Z","url":"/register"}
+{"level":"info","message":"New expense added by user: 6a01d46e525f0b3755face45, amount: 200, category: Food","timestamp":"2026-05-11T13:06:54.190Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.192Z","url":"/"}
+{"level":"info","message":"New user registered: tester@example.com","timestamp":"2026-05-11T13:06:54.265Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.265Z","url":"/register"}
+{"level":"info","message":"Budget set for user: 6a01d46e525f0b3755face47, category: Food, limit: 100","timestamp":"2026-05-11T13:06:54.268Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.268Z","url":"/"}
+{"level":"info","message":"New expense added by user: 6a01d46e525f0b3755face47, amount: 150, category: Food","timestamp":"2026-05-11T13:06:54.270Z"}
+{"level":"warn","message":"Budget breached for user: 6a01d46e525f0b3755face47, category: Food","timestamp":"2026-05-11T13:06:54.273Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.273Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-11T13:06:54.276Z","url":"/"}
+{"level":"info","message":"New user registered: tester@example.com","timestamp":"2026-05-11T13:06:54.348Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.349Z","url":"/register"}
+{"level":"info","message":"New expense added by user: 6a01d46e525f0b3755face4b, amount: 12000, category: Shopping","timestamp":"2026-05-11T13:06:54.351Z"}
+{"level":"warn","message":"Large transaction detected for user: 6a01d46e525f0b3755face4b, amount: 12000","timestamp":"2026-05-11T13:06:54.352Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.352Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-11T13:06:54.354Z","url":"/"}
+{"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:06:54.856Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.856Z","url":"/register"}
+{"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:06:54.940Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:54.941Z","url":"/register"}
+{"level":"error","message":"HTTP POST /register - 400","method":"POST","status":400,"timestamp":"2026-05-11T13:06:54.944Z","url":"/register"}
+{"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:06:55.038Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:55.039Z","url":"/register"}
+{"level":"info","message":"User logged in: yuvraj@test.com","timestamp":"2026-05-11T13:06:55.110Z"}
+{"level":"info","message":"HTTP POST /login - 200","method":"POST","status":200,"timestamp":"2026-05-11T13:06:55.110Z","url":"/login"}
+{"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:06:55.188Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:55.189Z","url":"/register"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-11T13:06:55.259Z","url":"/login"}
+{"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:06:55.328Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:55.328Z","url":"/register"}
+{"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-11T13:06:55.330Z","url":"/login"}

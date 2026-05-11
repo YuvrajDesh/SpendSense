@@ -44,9 +44,16 @@ spec:
           initialDelaySeconds: 15
           periodSeconds: 20
         env:
-        # Env vars will be injected by Vault Agent via /vault/secrets/config
-        # The application should be started with 'source /vault/secrets/config && npm start'
-        # or use a library to read from the file.
+        - name: MONGO_URI
+          valueFrom:
+            secretKeyRef:
+              name: spendsense-secrets
+              key: MONGO_URI
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: spendsense-secrets
+              key: JWT_SECRET
         - name: VAULT_SECRET_PATH
           value: "/vault/secrets/config"
 ---

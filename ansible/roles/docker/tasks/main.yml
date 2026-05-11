@@ -1,11 +1,36 @@
 ---
-- name: Install Docker
-  package:
-    name: docker
-    state: present
+# ─── Docker Role — macOS (Docker Desktop) ────────────────────────────────────
 
-- name: Start Docker service
-  service:
-    name: docker
-    state: started
-    enabled: yes
+- name: Check if Docker CLI is available
+  command: which docker
+  register: docker_which
+  changed_when: false
+  failed_when: false
+
+- name: Fail if Docker is not installed
+  fail:
+    msg: "Docker is not installed. Please install Docker Desktop from https://www.docker.com/products/docker-desktop/"
+  when: docker_which.rc != 0
+
+- name: Check if Docker daemon is running
+  command: docker info
+  register: docker_info
+  changed_when: false
+  failed_when: false
+
+- name: Start Docker Desktop if not running (macOS)
+  command: open -a Docker
+  when: docker_info.rc != 0
+  changed_when: true
+
+- name: Wait for Docker daemon to become available (up to 60s)
+  command: docker info
+  register: docker_ready
+  until: docker_ready.rc == 0
+  retries: 12
+  delay: 5
+  changed_when: false
+
+- name: Confirm Docker is running
+  debug:
+    msg: "✅ Docker daemon is up and running."

@@ -1,9 +1,37 @@
 ---
-- name: Install minikube
-  get_url:
-    url: https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-    dest: /usr/local/bin/minikube
-    mode: '0755'
+# ─── Kubernetes Role — Ensure Minikube is Running (macOS) ────────────────────
 
-- name: Start minikube
+- name: Check if minikube is installed
+  command: which minikube
+  register: minikube_which
+  changed_when: false
+  failed_when: false
+
+- name: Fail if minikube is not installed
+  fail:
+    msg: "minikube is not installed. Run: brew install minikube"
+  when: minikube_which.rc != 0
+
+- name: Get minikube status
+  command: minikube status --format "{{.Host}}"
+  register: minikube_status
+  changed_when: false
+  failed_when: false
+
+- name: Start minikube if not running
   command: minikube start --driver=docker
+  when: minikube_status.stdout != "Running"
+  register: minikube_start
+  changed_when: true
+
+- name: Wait for Kubernetes API server to be ready
+  command: kubectl cluster-info
+  register: k8s_ready
+  until: k8s_ready.rc == 0
+  retries: 20
+  delay: 10
+  changed_when: false
+
+- name: Confirm Minikube is running
+  debug:
+    msg: "✅ Minikube is up. Kubernetes API is reachable."

@@ -1,18 +1,27 @@
 ---
-- name: Install Docker
-  hosts: all
-  become: yes
+# ─── SpendSense — Pre-flight & Deploy Playbook ────────────────────────────────
+# Runs on localhost (the Jenkins/Mac host itself).
+# Ensures Docker Desktop and Minikube are up before deploying.
+
+- name: "1. Ensure Docker Desktop is running"
+  hosts: localhost
+  connection: local
+  gather_facts: false
   roles:
     - docker
 
-- name: Install Kubernetes
-  hosts: all
-  become: yes
+- name: "2. Ensure Minikube is running"
+  hosts: localhost
+  connection: local
+  gather_facts: false
   roles:
     - kubernetes
 
-- name: Deploy SpendSense
-  hosts: all
-  become: yes
+- name: "3. Deploy SpendSense to Kubernetes"
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    project_root: "{{ playbook_dir | dirname }}"
   roles:
     - deploy

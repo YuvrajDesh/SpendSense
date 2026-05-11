@@ -51,6 +51,8 @@ pipeline {
                 // For now, assuming pre-authenticated or using standard credentials
                 sh "docker push ${BACKEND_IMAGE}:${env.BUILD_NUMBER}"
                 sh "docker push ${FRONTEND_IMAGE}:${env.BUILD_NUMBER}"
+                sh "docker tag ${BACKEND_IMAGE}:${env.BUILD_NUMBER} ${BACKEND_IMAGE}:latest"
+                sh "docker push ${BACKEND_IMAGE}:latest"
                 sh "docker tag ${FRONTEND_IMAGE}:${env.BUILD_NUMBER} ${FRONTEND_IMAGE}:latest"
                 sh "docker push ${FRONTEND_IMAGE}:latest"
             }
