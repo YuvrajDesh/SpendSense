@@ -54,6 +54,16 @@ spec:
             secretKeyRef:
               name: spendsense-secrets
               key: JWT_SECRET
+        - name: LOGSTASH_HOST
+          valueFrom:
+            secretKeyRef:
+              name: spendsense-secrets
+              key: LOGSTASH_HOST
+        - name: LOGSTASH_PORT
+          valueFrom:
+            secretKeyRef:
+              name: spendsense-secrets
+              key: LOGSTASH_PORT
         - name: VAULT_SECRET_PATH
           value: "/vault/secrets/config"
 ---
