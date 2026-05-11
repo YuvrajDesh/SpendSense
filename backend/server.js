@@ -50,6 +50,11 @@ app.use('/api/analytics', analyticsRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/export', exportRoutes);
 
+// Health check for K8s probes
+app.get('/api/health', (req, res) => {
+    res.status(200).json({ status: 'UP', timestamp: new Date() });
+});
+
 // Test route
 app.get('/', (req, res) => {
     res.json({ message: 'SpendSense API is running' });

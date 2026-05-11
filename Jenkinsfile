@@ -37,7 +37,18 @@ pipeline {
 
         stage('Push to Docker Hub') {
             steps {
-
+                // Securely fetch Docker Hub credentials from HashiCorp Vault
+                // Requires Jenkins HashiCorp Vault Plugin
+                /*
+                withVault(configuration: [vaultUrl: 'http://vault:8200', vaultCredentialId: 'vault-token'],
+                          secrets: [[path: 'secret/data/spendsense/dockerhub', secretValues: [
+                              [envVar: 'DOCKER_HUB_USER', vaultKey: 'username'],
+                              [envVar: 'DOCKER_HUB_PWD', vaultKey: 'password']
+                          ]]]) {
+                    sh "docker login -u ${DOCKER_HUB_USER} -p ${DOCKER_HUB_PWD}"
+                }
+                */
+                // For now, assuming pre-authenticated or using standard credentials
                 sh "docker push ${BACKEND_IMAGE}:${env.BUILD_NUMBER}"
                 sh "docker push ${FRONTEND_IMAGE}:${env.BUILD_NUMBER}"
                 sh "docker tag ${FRONTEND_IMAGE}:${env.BUILD_NUMBER} ${FRONTEND_IMAGE}:latest"
