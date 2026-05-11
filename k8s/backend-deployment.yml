@@ -66,6 +66,13 @@ spec:
               key: LOGSTASH_PORT
         - name: VAULT_SECRET_PATH
           value: "/vault/secrets/config"
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "500m"
+            memory: "256Mi"
 ---
 apiVersion: v1
 kind: Service

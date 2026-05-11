@@ -1,6 +1,8 @@
 const { MongoMemoryServer } = require('mongodb-memory-server');
 const mongoose = require('mongoose');
 
+jest.setTimeout(30000); // Increase timeout for CI environments
+
 let mongod;
 
 // Start in-memory MongoDB before all tests
