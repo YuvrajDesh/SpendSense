@@ -35,13 +35,13 @@ spec:
           httpGet:
             path: /api/health
             port: 5000
-          initialDelaySeconds: 5
+          initialDelaySeconds: 15
           periodSeconds: 10
         livenessProbe:
           httpGet:
             path: /api/health
             port: 5000
-          initialDelaySeconds: 15
+          initialDelaySeconds: 45
           periodSeconds: 20
         env:
         - name: MONGO_URI
