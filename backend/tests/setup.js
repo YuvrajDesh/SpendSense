@@ -1,13 +1,17 @@
 const { MongoMemoryServer } = require('mongodb-memory-server');
 const mongoose = require('mongoose');
 
-jest.setTimeout(30000); // Increase timeout for CI environments
+jest.setTimeout(120000); // Increase timeout for CI environments
 
 let mongod;
 
 // Start in-memory MongoDB before all tests
 beforeAll(async () => {
-    mongod = await MongoMemoryServer.create();
+    mongod = await MongoMemoryServer.create({
+        instance: {
+            launchTimeout: 60000 // 60 seconds startup timeout for resource-constrained CI
+        }
+    });
     const uri = mongod.getUri();
     await mongoose.connect(uri);
 });
