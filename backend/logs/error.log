@@ -35,3 +35,15 @@
 {"level":"error","message":"HTTP POST /register - 400","method":"POST","status":400,"timestamp":"2026-05-11T13:06:54.944Z","url":"/register"}
 {"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-11T13:06:55.259Z","url":"/login"}
 {"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-11T13:06:55.330Z","url":"/login"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.956Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.958Z","url":"/"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.959Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.960Z","url":"/"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.961Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.962Z","url":"/"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.964Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.964Z","url":"/"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.965Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.965Z","url":"/"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.966Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.966Z","url":"/"}

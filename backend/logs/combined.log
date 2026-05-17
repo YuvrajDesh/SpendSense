@@ -295,3 +295,17 @@
 {"level":"info","message":"New user registered: yuvraj@test.com","timestamp":"2026-05-11T13:06:55.328Z"}
 {"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-11T13:06:55.328Z","url":"/register"}
 {"level":"error","message":"HTTP POST /login - 400","method":"POST","status":400,"timestamp":"2026-05-11T13:06:55.330Z","url":"/login"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-05-17T04:49:49.697Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-17T04:49:49.887Z"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.956Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.958Z","url":"/"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.959Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.960Z","url":"/"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.961Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.962Z","url":"/"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.964Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.964Z","url":"/"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.965Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.965Z","url":"/"}
+{"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.966Z"}
+{"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.966Z","url":"/"}

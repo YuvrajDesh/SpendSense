@@ -424,3 +424,14 @@ webroot: /Users/yuvrajdeshmukh/.jenkins/war
 2026-05-13 15:00:33.331+0000 [id=1258]	INFO	o.j.p.g.w.s.DefaultPushGHEventSubscriber#onEvent: Received PushEvent for https://github.com/YuvrajDesh/SpendSense from 140.82.115.123 ⇒ https://unmelodramatically-unconserving-ada.ngrok-free.dev:8080/github-webhook/
 2026-05-13 15:00:33.440+0000 [id=1258]	INFO	o.j.p.g.w.s.DefaultPushGHEventSubscriber$1#run: Poked SpendSense-Pipeline
 2026-05-13 15:00:36.109+0000 [id=1448]	INFO	c.c.jenkins.GitHubPushTrigger$1#run: SCM changes detected in SpendSense-Pipeline. Triggering #3
+2026-05-13 16:07:57.661+0000 [id=1810]	INFO	o.j.p.g.w.s.DefaultPushGHEventSubscriber#onEvent: Received PushEvent for https://github.com/YuvrajDesh/SpendSense from 140.82.115.113 ⇒ https://unmelodramatically-unconserving-ada.ngrok-free.dev:8080/github-webhook/
+2026-05-13 16:07:57.910+0000 [id=1810]	INFO	o.j.p.g.w.s.DefaultPushGHEventSubscriber$1#run: Poked SpendSense-Pipeline
+2026-05-13 16:08:00.241+0000 [id=2197]	INFO	c.c.jenkins.GitHubPushTrigger$1#run: SCM changes detected in SpendSense-Pipeline. Triggering #4
+2026-05-16 09:22:53.649+0000 [id=7782]	INFO	hudson.util.Retrier#start: Attempt #1 to do the action check updates server
+2026-05-16 09:23:02.032+0000 [id=7782]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+2026-05-16 09:23:04.344+0000 [id=7782]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+2026-05-16 09:23:07.245+0000 [id=7782]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.gradle.GradleInstaller
+2026-05-16 09:23:07.246+0000 [id=7782]	INFO	hudson.util.Retrier#start: Performed the action check updates server successfully at the attempt #1
+2026-05-17 04:37:26.984+0000 [id=1258]	INFO	o.j.p.g.w.s.PingGHEventSubscriber#onEvent: PING webhook received from repo <https://github.com/YuvrajDesh/SpendSense>!
+2026-05-17 04:45:20.355+0000 [id=1890]	INFO	o.j.p.g.w.s.PingGHEventSubscriber#onEvent: PING webhook received from repo <https://github.com/YuvrajDesh/SpendSense>!
+2026-05-17 04:46:49.138+0000 [id=2365]	INFO	o.j.p.g.w.s.PingGHEventSubscriber#onEvent: PING webhook received from repo <https://github.com/YuvrajDesh/SpendSense>!
