@@ -47,3 +47,4 @@
 {"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.965Z","url":"/"}
 {"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.966Z"}
 {"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.966Z","url":"/"}
+{"level":"error","message":"HTTP POST /6a096463dc664ed083591319/members - 404","method":"POST","status":404,"timestamp":"2026-05-17T06:47:18.080Z","url":"/6a096463dc664ed083591319/members"}

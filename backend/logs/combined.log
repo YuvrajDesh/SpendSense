@@ -313,3 +313,96 @@
 {"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-17T05:42:23.141Z"}
 {"level":"info","message":"Server running on port 5000","timestamp":"2026-05-17T06:20:42.215Z"}
 {"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-17T06:20:42.547Z"}
+{"level":"info","message":"Attempting to register new user: anna@gmail.com","timestamp":"2026-05-17T06:42:35.027Z"}
+{"level":"info","message":"New user registered: anna@gmail.com","timestamp":"2026-05-17T06:42:37.750Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-17T06:42:37.872Z","url":"/register"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:42:38.688Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:42:39.149Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:42:39.315Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:42:39.378Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:42:39.557Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:42:39.923Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:42:44.930Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:42:45.150Z","url":"/"}
+{"level":"info","message":"Budget set for user: 6a09635bdc664ed083591312, category: Rent, limit: 10000","timestamp":"2026-05-17T06:43:03.092Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-17T06:43:03.101Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:43:03.654Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:43:06.957Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:43:06.981Z","url":"/"}
+{"level":"info","message":"HTTP GET /?type=expense - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:43:11.003Z","url":"/?type=expense"}
+{"level":"info","message":"HTTP GET /?type=expense&category=Salary - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:43:16.276Z","url":"/?type=expense&category=Salary"}
+{"level":"info","message":"HTTP GET /?type=income&category=Salary - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:43:20.755Z","url":"/?type=income&category=Salary"}
+{"level":"info","message":"Attempting to register new user: rohit@gmail.com","timestamp":"2026-05-17T06:45:49.395Z"}
+{"level":"info","message":"New user registered: rohit@gmail.com","timestamp":"2026-05-17T06:45:50.570Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-17T06:45:50.580Z","url":"/register"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:45:50.788Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:45:50.791Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:45:50.792Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:45:50.842Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:45:50.846Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:45:50.854Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:45:55.966Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:45:55.973Z","url":"/"}
+{"level":"info","message":"HTTP GET /?type=income - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:45:59.364Z","url":"/?type=income"}
+{"level":"info","message":"New expense added by user: 6a09641ddc664ed083591314, amount: 100000, category: Food","timestamp":"2026-05-17T06:46:09.487Z"}
+{"level":"warn","message":"Large transaction detected for user: 6a09641ddc664ed083591314, amount: 100000","timestamp":"2026-05-17T06:46:09.524Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-17T06:46:09.526Z","url":"/"}
+{"level":"info","message":"HTTP GET /?type=income - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:46:09.547Z","url":"/?type=income"}
+{"level":"info","message":"HTTP GET /?type=expense - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:46:13.962Z","url":"/?type=expense"}
+{"level":"info","message":"HTTP GET /?type=expense&category=Rent - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:46:17.401Z","url":"/?type=expense&category=Rent"}
+{"level":"info","message":"New expense added by user: 6a09641ddc664ed083591314, amount: 10000, category: Food","timestamp":"2026-05-17T06:46:26.288Z"}
+{"level":"warn","message":"Large transaction detected for user: 6a09641ddc664ed083591314, amount: 10000","timestamp":"2026-05-17T06:46:26.310Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-17T06:46:26.314Z","url":"/"}
+{"level":"info","message":"HTTP GET /?type=expense&category=Rent - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:46:26.338Z","url":"/?type=expense&category=Rent"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:46:29.243Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:46:29.258Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:46:29.261Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:46:29.265Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:46:29.274Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:46:29.276Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:46:35.630Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:46:35.637Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:46:43.879Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:46:43.883Z","url":"/"}
+{"level":"info","message":"Group created by user: 6a09641ddc664ed083591314, groupName: F4 Bois","timestamp":"2026-05-17T06:46:59.736Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-17T06:46:59.737Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:46:59.782Z","url":"/"}
+{"level":"info","message":"HTTP GET /6a096463dc664ed083591319/expenses - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:47:01.240Z","url":"/6a096463dc664ed083591319/expenses"}
+{"level":"error","message":"HTTP POST /6a096463dc664ed083591319/members - 404","method":"POST","status":404,"timestamp":"2026-05-17T06:47:18.080Z","url":"/6a096463dc664ed083591319/members"}
+{"level":"info","message":"Attempting to register new user: pankaj@gmail.com","timestamp":"2026-05-17T06:47:37.515Z"}
+{"level":"info","message":"New user registered: pankaj@gmail.com","timestamp":"2026-05-17T06:47:37.530Z"}
+{"level":"info","message":"HTTP POST /register - 201","method":"POST","status":201,"timestamp":"2026-05-17T06:47:37.531Z","url":"/register"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:47:37.574Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:47:37.581Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:47:37.583Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:47:37.587Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:47:37.588Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:47:37.591Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:47:40.772Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:47:40.776Z","url":"/"}
+{"level":"info","message":"Group created by user: 6a096489dc664ed08359131a, groupName: F4 Bois","timestamp":"2026-05-17T06:47:47.845Z"}
+{"level":"info","message":"HTTP POST / - 201","method":"POST","status":201,"timestamp":"2026-05-17T06:47:47.851Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:47:47.889Z","url":"/"}
+{"level":"info","message":"HTTP GET /6a096493dc664ed08359131b/expenses - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:47:50.282Z","url":"/6a096493dc664ed08359131b/expenses"}
+{"level":"info","message":"Member added to group: F4 Bois, member: rohit@gmail.com","timestamp":"2026-05-17T06:47:58.484Z"}
+{"level":"info","message":"HTTP POST /6a096493dc664ed08359131b/members - 200","method":"POST","status":200,"timestamp":"2026-05-17T06:47:58.485Z","url":"/6a096493dc664ed08359131b/members"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:47:58.501Z","url":"/"}
+{"level":"info","message":"HTTP GET /6a096493dc664ed08359131b/expenses - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:47:58.509Z","url":"/6a096493dc664ed08359131b/expenses"}
+{"level":"info","message":"Group expense added: Dinner, amount: 1000, splitType: equal","timestamp":"2026-05-17T06:48:23.262Z"}
+{"level":"info","message":"HTTP POST /6a096493dc664ed08359131b/expenses - 201","method":"POST","status":201,"timestamp":"2026-05-17T06:48:23.264Z","url":"/6a096493dc664ed08359131b/expenses"}
+{"level":"info","message":"HTTP GET /6a096493dc664ed08359131b/expenses - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:48:23.280Z","url":"/6a096493dc664ed08359131b/expenses"}
+{"level":"info","message":"User logged in: rohit@gmail.com","timestamp":"2026-05-17T06:49:09.951Z"}
+{"level":"info","message":"HTTP POST /login - 200","method":"POST","status":200,"timestamp":"2026-05-17T06:49:09.951Z","url":"/login"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:49:09.978Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:49:09.980Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:49:09.982Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:49:09.990Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:49:09.991Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:49:09.993Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:49:11.564Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:49:11.573Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:49:13.718Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:49:13.726Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:49:20.195Z","url":"/"}
+{"level":"info","message":"HTTP GET / - 304","method":"GET","status":304,"timestamp":"2026-05-17T06:49:20.199Z","url":"/"}
+{"level":"info","message":"HTTP GET /6a096493dc664ed08359131b/expenses - 200","method":"GET","status":200,"timestamp":"2026-05-17T06:49:22.829Z","url":"/6a096493dc664ed08359131b/expenses"}
