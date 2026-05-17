@@ -137,7 +137,7 @@ const Groups = () => {
     return (
         <div className="p-6 bg-gray-100 min-h-screen">
             <div className="flex justify-between items-center mb-6">
-                <h1 className="text-2xl font-bold">Shared Expense Groups</h1>
+                <h1 className="text-2xl font-bold">Shared Expense </h1>
                 <button
                     onClick={() => setShowForm(true)}
                     className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
@@ -343,74 +343,74 @@ const Groups = () => {
                             )}
                         </div>
                         {/* Settlement Summary */}
-<div className="bg-white p-6 rounded-lg shadow mb-4">
-    <h4 className="font-semibold text-lg mb-4">💰 Who Owes Whom</h4>
-    {(() => {
-        const balances = {};
+                        <div className="bg-white p-6 rounded-lg shadow mb-4">
+                            <h4 className="font-semibold text-lg mb-4">💰 Who Owes Whom</h4>
+                            {(() => {
+                                const balances = {};
 
-        groupExpenses.forEach(expense => {
-            expense.splitDetails?.forEach(split => {
-                if (!split.isPaid && split.user?._id !== expense.paidBy?._id) {
-                    const owerId = split.user?._id;
-                    const payerId = expense.paidBy?._id;
-                    const owerName = split.user?.name;
-                    const payerName = expense.paidBy?.name;
+                                groupExpenses.forEach(expense => {
+                                    expense.splitDetails?.forEach(split => {
+                                        if (!split.isPaid && split.user?._id !== expense.paidBy?._id) {
+                                            const owerId = split.user?._id;
+                                            const payerId = expense.paidBy?._id;
+                                            const owerName = split.user?.name;
+                                            const payerName = expense.paidBy?.name;
 
-                    if (!owerId || !payerId) return;
+                                            if (!owerId || !payerId) return;
 
-                    const key = `${owerId}_${payerId}`;
-                    if (!balances[key]) {
-                        balances[key] = {
-                            owerId,
-                            payerId,
-                            owerName,
-                            payerName,
-                            amount: 0
-                        };
-                    }
-                    balances[key].amount += split.amount;
-                }
-            });
-        });
-
-        const balanceList = Object.values(balances);
-
-        if (balanceList.length === 0) {
-            return <p className="text-green-600">✅ All settled up!</p>;
-        }
-
-        return balanceList.map((balance, index) => (
-            <div key={index} className="flex justify-between items-center py-3 border-b last:border-0">
-                <div>
-                    <p className="font-medium">
-                        <span className="text-red-600">{balance.owerName}</span>
-                        {' owes '}
-                        <span className="text-green-600">{balance.payerName}</span>
-                    </p>
-                    <p className="text-gray-500 text-sm">Total pending: ₹{balance.amount.toFixed(2)}</p>
-                </div>
-                {balance.owerId === user?.id && (
-                    <button
-                        onClick={async () => {
-                            try {
-                                const res = await axios.post(`/groups/${selectedGroup._id}/settle`, {
-                                    memberId: balance.payerId
+                                            const key = `${owerId}_${payerId}`;
+                                            if (!balances[key]) {
+                                                balances[key] = {
+                                                    owerId,
+                                                    payerId,
+                                                    owerName,
+                                                    payerName,
+                                                    amount: 0
+                                                };
+                                            }
+                                            balances[key].amount += split.amount;
+                                        }
+                                    });
                                 });
-                                alert(res.data.message);
-                                fetchGroupExpenses(selectedGroup._id);
-                            } catch (err) {
-                                alert(err.response?.data?.message || 'Error settling up');
-                            }
-                        }}
-                        className="bg-green-600 text-white px-4 py-2 rounded text-sm hover:bg-green-700"
-                    >
-                        Settle Up ₹{balance.amount.toFixed(2)}
-                    </button>
-                )}
-            </div>
-        ));
-    })()}
-</div>
+
+                                const balanceList = Object.values(balances);
+
+                                if (balanceList.length === 0) {
+                                    return <p className="text-green-600">✅ All settled up!</p>;
+                                }
+
+                                return balanceList.map((balance, index) => (
+                                    <div key={index} className="flex justify-between items-center py-3 border-b last:border-0">
+                                        <div>
+                                            <p className="font-medium">
+                                                <span className="text-red-600">{balance.owerName}</span>
+                                                {' owes '}
+                                                <span className="text-green-600">{balance.payerName}</span>
+                                            </p>
+                                            <p className="text-gray-500 text-sm">Total pending: ₹{balance.amount.toFixed(2)}</p>
+                                        </div>
+                                        {balance.owerId === user?.id && (
+                                            <button
+                                                onClick={async () => {
+                                                    try {
+                                                        const res = await axios.post(`/groups/${selectedGroup._id}/settle`, {
+                                                            memberId: balance.payerId
+                                                        });
+                                                        alert(res.data.message);
+                                                        fetchGroupExpenses(selectedGroup._id);
+                                                    } catch (err) {
+                                                        alert(err.response?.data?.message || 'Error settling up');
+                                                    }
+                                                }}
+                                                className="bg-green-600 text-white px-4 py-2 rounded text-sm hover:bg-green-700"
+                                            >
+                                                Settle Up ₹{balance.amount.toFixed(2)}
+                                            </button>
+                                        )}
+                                    </div>
+                                ));
+                            })()}
+                        </div>
                         {/* Group Expenses */}
                         <div className="bg-white p-6 rounded-lg shadow">
                             <h4 className="font-semibold text-lg mb-4">Group Expenses</h4>
