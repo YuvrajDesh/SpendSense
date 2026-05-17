@@ -435,3 +435,12 @@ webroot: /Users/yuvrajdeshmukh/.jenkins/war
 2026-05-17 04:37:26.984+0000 [id=1258]	INFO	o.j.p.g.w.s.PingGHEventSubscriber#onEvent: PING webhook received from repo <https://github.com/YuvrajDesh/SpendSense>!
 2026-05-17 04:45:20.355+0000 [id=1890]	INFO	o.j.p.g.w.s.PingGHEventSubscriber#onEvent: PING webhook received from repo <https://github.com/YuvrajDesh/SpendSense>!
 2026-05-17 04:46:49.138+0000 [id=2365]	INFO	o.j.p.g.w.s.PingGHEventSubscriber#onEvent: PING webhook received from repo <https://github.com/YuvrajDesh/SpendSense>!
+2026-05-17 05:08:05.128+0000 [id=2365]	INFO	o.j.p.g.w.s.DefaultPushGHEventSubscriber#onEvent: Received PushEvent for https://github.com/YuvrajDesh/SpendSense from 140.82.115.242 ⇒ https://unmelodramatically-unconserving-ada.ngrok-free.dev:8080/github-webhook/
+2026-05-17 05:08:05.154+0000 [id=2365]	INFO	o.j.p.g.w.s.DefaultPushGHEventSubscriber$1#run: Poked SpendSense-Pipeline
+2026-05-17 05:08:06.898+0000 [id=10520]	INFO	c.c.jenkins.GitHubPushTrigger$1#run: SCM changes detected in SpendSense-Pipeline. Triggering #5
+2026-05-17 05:54:55.381+0000 [id=10353]	INFO	o.j.p.g.w.s.DefaultPushGHEventSubscriber#onEvent: Received PushEvent for https://github.com/YuvrajDesh/SpendSense from 140.82.115.111 ⇒ https://unmelodramatically-unconserving-ada.ngrok-free.dev:8080/github-webhook/
+2026-05-17 05:54:55.460+0000 [id=10353]	INFO	o.j.p.g.w.s.DefaultPushGHEventSubscriber$1#run: Poked SpendSense-Pipeline
+2026-05-17 05:54:57.734+0000 [id=10996]	INFO	c.c.jenkins.GitHubPushTrigger$1#run: SCM changes detected in SpendSense-Pipeline. Triggering #6
+2026-05-17 06:09:55.432+0000 [id=10637]	INFO	o.j.p.g.w.s.DefaultPushGHEventSubscriber#onEvent: Received PushEvent for https://github.com/YuvrajDesh/SpendSense from 140.82.115.98 ⇒ https://unmelodramatically-unconserving-ada.ngrok-free.dev:8080/github-webhook/
+2026-05-17 06:09:55.476+0000 [id=10637]	INFO	o.j.p.g.w.s.DefaultPushGHEventSubscriber$1#run: Poked SpendSense-Pipeline
+2026-05-17 06:09:57.223+0000 [id=11253]	INFO	c.c.jenkins.GitHubPushTrigger$1#run: SCM changes detected in SpendSense-Pipeline. Triggering #7

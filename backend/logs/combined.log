@@ -309,3 +309,7 @@
 {"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.965Z","url":"/"}
 {"level":"error","message":"Auth middleware error: invalid signature","timestamp":"2026-05-17T04:50:06.966Z"}
 {"level":"error","message":"HTTP GET / - 401","method":"GET","status":401,"timestamp":"2026-05-17T04:50:06.966Z","url":"/"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-05-17T05:42:22.897Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-17T05:42:23.141Z"}
+{"level":"info","message":"Server running on port 5000","timestamp":"2026-05-17T06:20:42.215Z"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-17T06:20:42.547Z"}
